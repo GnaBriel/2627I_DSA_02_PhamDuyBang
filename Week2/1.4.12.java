@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+public class Main {
+    static void printCommon(int[] a, int[] b) {
+        int i = 0;
+        int j = 0;
+        while (i < a.length && j < b.length) {
+            if (a[i] < b[j]) {
+                i++;
+            } else if (a[i] > b[j]) {
+                j++;
+            } else {
+                System.out.print(a[i] + " ");
+                i++;
+                j++;
+            }
+        }
+    }
+}
+
+
